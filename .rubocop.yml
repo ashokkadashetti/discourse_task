@@ -1,0 +1,26 @@
+require: rubocop-rails
+
+Style/Documentation: 
+  Enabled: false
+
+
+AllCops:
+  Exclude:
+    - '**/db/**/*'
+    - 'config/**/*'
+    - 'bin/*'
+    - 'config.ru'
+    - '*/channels/**/*'
+    - 'Gemfile'
+    - 'test/**/*'
+
+Bundler/OrderedGems:
+  Enabled: false
+
+Metrics/MethodLength:
+  Enabled: false
+  Max: 50 
+
+Metrics/BlockLength:
+ Enabled: false
+ max: 100
